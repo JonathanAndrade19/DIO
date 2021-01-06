@@ -70,15 +70,49 @@
 // alert(setReplace("vai Japão", "Japão", "Brasil"));
 
 
-function validarIdade(idade){
-    var validar;
-    if(idade >= 18){
-        validar = true
-    }else{
-        validar = false
-    }
-    return validar
+// function validarIdade(idade){
+//     var validar;
+//     if(idade >= 18){
+//         validar = true
+//     }else{
+//         validar = false
+//     }
+//     return validar
+// }
+
+// var idade = prompt("Qual sua idade? ");
+// alert(validarIdade(idade));
+
+function clicou(){
+    // alert("Obrigado por clicar");
+    document.getElementById("agradecimento").innerHTML = "Obrigado, Pode Clicar aqui e você sera redirecionado para o meu github";
 }
 
-var idade = prompt("Qual sua idade? ");
-alert(validarIdade(idade));
+function redirecionar(){
+    window.open("https://github.com/JonathanAndrade19?tab=overview&from=2021-01-01&to=2021-01-06"); // Abre em outra Aba
+    // window.location.href = "https://github.com/JonathanAndrade19?tab=overview&from=2021-01-01&to=2021-01-06"; // Abre na mesma Aba 
+}
+
+// function trocar(){
+//     document.getElementById("mousemove").innerHTML = "Obrigado por passar o mouse";
+// }
+
+// function voltar(){
+//     document.getElementById("mousemove").innerHTML = "Passe o mouse aqui";
+// }
+
+function trocar(elemento){
+    elemento.innerHTML = "Obrigado por passar o mouse";
+}
+
+function voltar(elemento){
+    elemento.innerHTML = "Passe o mouse aqui";
+}
+
+function load(){
+    alert("Página Carregada");
+}
+
+function funcaoChange(elemento){
+    console.log(elemento.value);
+}
